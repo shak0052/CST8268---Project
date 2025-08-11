@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>We Revive Rides</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="navbar">
+      <div class="logo">
+  <a href="index.html">
+    <img src="Logo.PNG" alt="We Revive Rides Logo">
+  </a>
+</div>
+
+      <ul class="nav-links">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#" class="active">Services</a></li>
+        <li><a href="#">Terms and Conditions</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <div class="plus-icon">+</div>
+    </div>
+    <hr />
+  </header>
+
+  <main class="services-section">
+    <h2>Services</h2>
+    <div class="packages">
+      <div class="package gold" onclick="toggleDropdown('gold')">
+        🟧 GOLD PACKAGE
+        <div id="gold" class="dropdown">
+          <h3>Standard Interior & Exterior Clean</h3>
+          <p><em>A perfect refresh to keep your car looking sharp.</em></p>
+          <strong>Includes:</strong>
+          <ul>
+            <li>Exterior hand wash & shammy air dry</li>
+            <li>Door jamb wipe-down</li>
+            <li>Rim polish & tire shine</li>
+            <li>Dashboard & console dusting</li>
+            <li>Vinyl surface wipe</li>
+            <li>Interior window cleaning</li>
+            <li>Carpet & seat vacuum</li>
+          </ul>
+          <div class="pricing">
+            <strong>Pricing:</strong>
+            <p>Cars: <b>$135</b></p>
+            <p>SUVs & Trucks: <b>$145</b></p>
+            <p>Vans: <b>$155</b></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="package platinum" onclick="toggleDropdown('platinum')">
+        🟦 PLATINUM PACKAGE
+        <div id="platinum" class="dropdown">
+          <h3>Deep Interior Refresh</h3>
+          <p><em>Building on Gold - for a deeper, revitalizing clean.</em></p>
+          <strong>Includes everything in Gold, plus:</strong>
+          <ul>
+            <li>Carpet shampoo</li>
+            <li>Salt removal</li>
+            <li>Enhanced floor mat & footwell care</li>
+           
+          </ul>
+          <div class="pricing">
+            <strong>Pricing:</strong>
+            <p>Cars: <b>$195</b></p>
+            <p>SUVs & Trucks: <b>$215</b></p>
+            <p>Vans: <b>$235</b></p>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="package diamond" onclick="toggleDropdown('diamond')">
+        💎 DIAMOND PACKAGE
+        <div id="diamond" class="dropdown">
+          <h3>  Full Interior & Exterior Restoration</h3>
+          <p><em>The ultimate detail — restoring your vehicle inside and out to a showroom finish.</em></p>
+          <strong>Includes:</strong>
+          <ul>
+            <li>Seat shampoo (cloth or leather-safe treatment) </li>
+            <li>Leather treatment </li>
+            <li>Engine bay clean & shine </li>
+            <li>Spare tire & trunk area vacuum </li>
+            <li>Full salt & stain removal </li>
+           
+          </ul>
+          <div class="pricing">
+            <strong>Pricing:</strong>
+            <p>Cars: <b>$255</b></p>
+            <p>SUVs & Trucks: <b>$275</b></p>
+            <p>Vans: <b>$295</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <br><br> <br>
+    <div class="buttons">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdgIlq7oAx4j-TCd5fXUyxEhsdOjJuPevwuRpdg2Lz1DPF9wQ/viewform?usp=header" class="btn blue-btn">Book Now</a>
+      
+    </div>
+  </main>
+
+
+
+  <footer>
+    <hr />
+    <p>© We Revive Rides 2025</p>
+  </footer>
+
+  <script>
+    function toggleDropdown(id) {
+      const dropdown = document.getElementById(id);
+      dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>
